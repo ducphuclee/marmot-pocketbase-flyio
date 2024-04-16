@@ -69,7 +69,7 @@ while true; do
     # Launch!
     echo "Launching marmot ..."
     GOMEMLIMT=32MiB \
-    /pb/marmot -config ./marmot-config.toml localhost:4222 -cluster-peers "marmot2.coolify.ducphuclee.tech:4223" &
+    /pb/marmot -config ./marmot-config.toml localhost:4222 -cluster-peers "marmot2.coolify.ducphuclee.tech" &
     MARMOT_ID=$!
 
     # Wait for marmot to exit
