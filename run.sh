@@ -69,7 +69,7 @@ while true; do
     # Launch!
     echo "Launching marmot ..."
     GOMEMLIMT=32MiB \
-    /pb/marmot -config ./marmot-config.toml -cluster-addr "127.0.0.1:4222" -cluster-peers "dns://global.${FLY_APP_NAME}.internal:4222/" &
+    /pb/marmot -config ./marmot-config.toml localhost:4222 -cluster-peers "marmot2.coolify.ducphuclee.tech:4223" &
     MARMOT_ID=$!
 
     # Wait for marmot to exit
